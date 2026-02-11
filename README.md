@@ -1,111 +1,118 @@
-# # SQLite Table Joins – Practice Project
+# 🎵 Chinook Database – SQL Analysis Project
 
-This repository contains a **SQLite SQL practice notebook** focused on **table joins, aggregations, filtering, and analytical queries** using a music store–style database (customers, invoices, tracks, albums, artists, employees, genres).
-
-The project is implemented in a **Jupyter Notebook (`.ipynb`)** and is designed to strengthen practical SQL skills for **data analysis and reporting**.
-
----
-
-## 📌 Objectives
-
-* Practice **INNER JOIN, LEFT JOIN** concepts
-* Apply **GROUP BY, HAVING, ORDER BY**
-* Perform **real-world analytical queries**
-* Build confidence for **data analyst / research roles**
+This project contains SQL queries and analysis performed on the **Chinook Database (`chinook.db`)**, a sample digital media store database.
+The analysis focuses on practicing **SQL joins, aggregations, grouping, filtering, ranking, and customer segmentation**.
 
 ---
 
-## 🛠 Tools & Technologies
+## 📂 Project Files
+
+```
+chinook.db              # SQLite database file
+SQL_Tablejoin.ipynb     # Jupyter Notebook with SQL queries and analysis
+README.md               # Project documentation
+```
+
+---
+
+## 🛠 Tools & Technologies Used
 
 * **SQLite**
 * **SQL**
+* **Python (pandas)**
 * **Jupyter Notebook**
-* **DB Browser for SQLite / SQLite3** (optional)
 
 ---
 
-## 📂 File Structure
+## 🗂 Database Overview
 
-```
-SQL_Tablejoin.ipynb   # Main notebook with all SQL queries and explanations
-chinook.db            # Database File
-README.md             # Project documentation
-```
+The Chinook database represents a digital music store and includes tables such as:
 
----
+* `customer`
+* `invoice`
+* `invoice_line`
+* `track`
+* `album`
+* `artist`
+* `genre`
+* `media_type`
+* `employee`
 
-## 🔍 Key SQL Concepts Covered
-
-* Table Joins (INNER JOIN, LEFT JOIN)
-* Aggregate Functions (SUM, COUNT)
-* Grouping & Filtering (GROUP BY, HAVING)
-* Pattern Matching (LIKE, wildcards)
-* Subqueries & CTE-style logic
-* Ranking & Top-N analysis
+These tables are connected through primary and foreign keys, allowing relational analysis.
 
 ---
 
-## 📊 Queries Implemented
+## 📊 Key SQL Concepts Covered
 
-### 1️⃣ Invoice & Track Analysis
+* ✅ INNER JOIN & LEFT JOIN
+* ✅ Self Join (Employee–Manager relationship)
+* ✅ GROUP BY & HAVING
+* ✅ Aggregate Functions (COUNT, SUM)
+* ✅ CASE Statements (Customer Segmentation)
+* ✅ Ranking (Top customers by country)
+* ✅ Filtering & Sorting
 
-* Fetch invoice details with track name, media type, quantity, and unit price
-* Filter results using specific invoice IDs
+---
 
-### 2️⃣ Album & Artist Analysis
+## 🔎 Analysis Performed
 
-* List tracks with album titles and artist names
-* Identify albums with **more than 10 tracks**
-* Count number of tracks per genre
+### 1️⃣ Customer Analysis
 
-### 3️⃣ Sales Insights
+* Customer-wise invoice count and total spending
+* Customer segmentation (Small, Regular, Big Spender)
+* Top-spending customer in each country
 
-* **Top 5 selling tracks**
+### 2️⃣ Sales Analysis
+
+* Invoice-wise track details
 * Number of tracks sold per album
-* Customer-wise total spending
+* Album sales performance
 
-### 4️⃣ Customer Analytics
+### 3️⃣ Music Catalog Analysis
 
-* Best customer from each country by total spending
-* Top 5 customers by invoice count and amount spent
-* Categorize customers based on spending
+* Number of tracks in each genre
+* Albums with more than 10 tracks
+* Track details with album and artist information
 
-### 5️⃣ Employee Hierarchy
+### 4️⃣ Employee Reporting Structure
 
-* Fetch employee details with reporting managers
-
-### 6️⃣ Pattern Matching & Filtering
-
-* Customers whose names contain specific characters (e.g., 'JEN')
+* Employee details with reporting manager
+* Self join to replace `reports_to` ID with supervisor name
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ How to Run This Project
 
-1. Install **SQLite** and **Jupyter Notebook**
-2. Open the notebook:
+1. Install SQLite and Jupyter Notebook.
+2. Place `chinook.db` in the same directory as the notebook.
+3. Open the notebook:
 
 ```bash
 jupyter notebook SQL_Tablejoin.ipynb
 ```
 
-3. Run cells sequentially to view queries and outputs
+4. Run all cells sequentially.
 
 ---
 
 ## 🎯 Learning Outcomes
 
-* Improved understanding of **relational databases**
-* Hands-on experience with **analytical SQL queries**
-* Ready-to-showcase SQL project for **GitHub & LinkedIn**
+Through this project, I strengthened my ability to:
+
+* Write structured and optimized SQL queries
+* Perform relational joins correctly
+* Apply aggregation and grouping logic
+* Derive business insights from raw data
+* Implement customer segmentation using CASE statements
 
 ---
 
 ## 🚀 Future Improvements
 
-* Convert queries into **views**
-* Add **query optimization examples**
-* Visualize results using **Python (Matplotlib / Plotly)**
+* Add data visualization (Matplotlib / Plotly)
+* Create a dashboard version of analysis
+* Optimize queries for performance
+* Convert analysis into a business case study
 
 ---
 
@@ -116,4 +123,5 @@ Aspiring Data Analyst | SQL | Data Analytics
 
 ---
 
-⭐ If you find this project helpful, feel free to star the repository!
+⭐ If you found this project useful, feel free to star the repository!
+
