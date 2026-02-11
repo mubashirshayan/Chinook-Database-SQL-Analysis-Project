@@ -14,7 +14,7 @@ README.md               # Project documentation
 ```
 
 ---
-![Schema]("C:\Users\mubashir.shayan\OneDrive - Aga Khan University\Documents\analysis_class\data_classes\Session 21\Session 21\chinook_schema.png")
+![Schema](C:\Users\mubashir.shayan\OneDrive - Aga Khan University\Documents\analysis_class\data_classes\Session 21\Session 21\chinook_schema.png)
 
 ## 🛠 Tools & Technologies Used
 
