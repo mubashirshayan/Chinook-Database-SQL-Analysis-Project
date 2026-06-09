@@ -15,7 +15,8 @@ Chinook-Database-SQL-Analysis-Project/
 
 
 ---
-![Schema](https://github.com/mubashirshayan/-Chinook-Database-SQL-Analysis-Project/blob/main/Data/chinook_schema.png)
+![Schema](https://github.com/mubashirshayan/Chinook-Database-SQL-Analysis-Project/blob/main/Chinook_Sqlite_Analysis/schema.png)
+
 
 ## 🛠 Tools & Technologies Used
 
