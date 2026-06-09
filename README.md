@@ -8,10 +8,10 @@ The analysis focuses on practicing **SQL joins, aggregations, grouping, filterin
 ## 📂 Project Files
 Chinook-Database-SQL-Analysis-Project/
 ├─ README.md
-├─ Data/
+├─ Chinook_Sqlite_Analysis/
 │ ├─ chinook_schema.png
-│ ├─ chinook.db
-│ └─ Chinook_Database_–_SQL_Analysis.ipynb
+│ ├─ Chinook_Sqlite.sqlite
+│ └─ chinook-database-sql-analysis-project.ipynb
 
 
 ---
